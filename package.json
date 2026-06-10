@@ -1,10 +1,17 @@
 {
   "name": "line-notion-nippo-bot",
-  "version": "1.0.0",
-  "description": "LINE → Claude → Notion 日報Bot（ぶにゅう社労士事務所）",
+  "version": "2.0.0",
+  "description": "LINE to Notion Bot",
   "type": "module",
- "main": "server.js",
-"scripts": {
-  "start": "node server.js",
-  "dev": "node --watch server.js"
-},
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@notionhq/client": "2.2.14",
+    "express": "4.19.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
